@@ -18,13 +18,13 @@ function draw(){
       if(keyIsPressed && keyCode == UP_ARROW){
         playerY -= 5
       }
-      if(keyIsPressed && keyCode == DOWN_ARROW){
+      else if(keyIsPressed && keyCode == DOWN_ARROW){
         playerY += 5
       }
-      if(keyIsPressed && keyCode == LEFT_ARROW){
+      else if(keyIsPressed && keyCode == LEFT_ARROW){
         playerX -= 5
       }
-      if(keyIsPressed && keyCode == RIGHT_ARROW){
+      else{
         playerX += 5
       }
       

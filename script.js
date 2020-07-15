@@ -12,6 +12,7 @@ function setup(){
   
 function draw(){
     if(GameOn = true){
+      background(245, 235, 220);
       noStroke();
       fill(255, 156, 228);
       ellipse(playerX, playerY, 30, 30);

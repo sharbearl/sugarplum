@@ -24,7 +24,7 @@ function draw(){
       else if(keyIsPressed && keyCode == LEFT_ARROW){
         playerX -= 5
       }
-      else{
+      else if(keyIsPressed && keyCode == RIGHT_ARROW){
         playerX += 5
       }
       

@@ -6,7 +6,8 @@ function setup(){
   background(255, 237, 247);
   frameRate(100);
   GameOn = true;
-  playerX = playerY = 0;
+  playerX = 0;
+  playerY = 0;
 }
   
 function draw(){
@@ -14,16 +15,16 @@ function draw(){
     noStroke();
     fill(255, 156, 228);
     ellipse(550, 460, 30, 30);
-    if(keyIsPressed && keyCode = UP_ARROW){
+    if(keyIsPressed && keyCode == UP_ARROW){
       playerY -= 5
     }
-    if(keyIsPressed && keyCode = DOWN_ARROW){
+    if(keyIsPressed && keyCode == DOWN_ARROW){
       playerY += 5
     }
-    if(keyIsPressed && keyCode = LEFT_ARROW){
+    if(keyIsPressed && keyCode == LEFT_ARROW){
       playerX -= 5
     }
-    if(keyIsPressed && keyCode = RIGHT_ARROW){
+    if(keyIsPressed && keyCode == RIGHT_ARROW){
       playerX += 5
     }
   }

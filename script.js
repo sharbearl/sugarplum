@@ -26,7 +26,7 @@ function draw(){
     if(GameOn = true){
       noStroke();
       fill(255, 156, 228);
-      ellipse(550, 460, 30, 30);
+      ellipse(550+playerX, 460+playerY, 30, 30);
       if(keyIsPressed && keyCode == UP_ARROW){
         playerY -= 5
       }

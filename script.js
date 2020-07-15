@@ -7,8 +7,8 @@ function setup(){
   frameRate(100);
   GameOn = true;
 //   play = true;
-  playerX = 0;
-  playerY = 0;
+  playerX = 550;
+  playerY = 460;
 }
   
 function draw(){
@@ -26,7 +26,7 @@ function draw(){
     if(GameOn = true){
       noStroke();
       fill(255, 156, 228);
-      ellipse(550+playerX, 460+playerY, 30, 30);
+      ellipse(playerX, playerY, 30, 30);
       if(keyIsPressed && keyCode == UP_ARROW){
         playerY -= 5
       }

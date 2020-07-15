@@ -27,6 +27,19 @@ function draw(){
       if(keyIsPressed && keyCode == RIGHT_ARROW){
         playerX += 5
       }
+      
+      if(playerX >= 1070){
+        playerX = 1070
+      }
+      if(playerX <= 30){
+        playerX = 30
+      }
+      if(playerY >= 770){
+        playerY = 770
+      }
+      if(playerY <= 30){
+        playerY = 30
+      }
     }
     else{
     }

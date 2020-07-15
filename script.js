@@ -1,5 +1,6 @@
 var GameOn;
 var playerX, playerY;
+var circle1_Y;
 
 function setup(){
   createCanvas(1100, 500);
@@ -41,6 +42,16 @@ function draw(){
       if(playerY <= 30){
         playerY = 30
       }
+      
+      fill(0);
+      ellipse (10, circle_Y, 30, 30);
+      if(circle_Y >= 510){
+        circle_Y = -10
+      }
+      else{
+        circle_Y += 10
+      }
+      
     }
     else{
     }

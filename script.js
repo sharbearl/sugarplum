@@ -14,6 +14,18 @@ function draw(){
     noStroke();
     fill(255, 156, 228);
     ellipse(550, 480, 30, 30);
+    if(keyIsPressed && keyCode = UP_ARROW){
+      playerY -= 5
+    }
+    if(keyIsPressed && keyCode = DOWN_ARROW){
+      playerY += 5
+    }
+    if(keyIsPressed && keyCode = LEFT_ARROW){
+      playerX -= 5
+    }
+    if(keyIsPressed && keyCode = RIGHT_ARROW){
+      playerX += 5
+    }
   }
   else{
   }

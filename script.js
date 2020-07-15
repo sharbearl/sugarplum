@@ -34,8 +34,8 @@ function draw(){
       if(playerX <= 30){
         playerX = 30
       }
-      if(playerY >= 770){
-        playerY = 770
+      if(playerY >= 470){
+        playerY = 470
       }
       if(playerY <= 30){
         playerY = 30

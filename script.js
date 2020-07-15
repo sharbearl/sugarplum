@@ -9,6 +9,7 @@ function setup(){
   GameOn = true;
   playerX = 550;
   playerY = 460;
+  circle1_Y = -10;
 }
   
 function draw(){
@@ -44,12 +45,12 @@ function draw(){
       }
       
       fill(0);
-      ellipse (10, circle_Y, 30, 30);
-      if(circle_Y >= 510){
-        circle_Y = -10
+      ellipse (10, circle1_Y, 30, 30);
+      if(circle1_Y >= 510){
+        circle1_Y = -10
       }
       else{
-        circle_Y += 10
+        circle1_Y += 10
       }
       
     }

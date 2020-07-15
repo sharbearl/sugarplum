@@ -6,23 +6,23 @@ function setup(){
   background(245, 235, 220);
   frameRate(100);
   GameOn = true;
-  play = true;
+//   play = true;
   playerX = 0;
   playerY = 0;
 }
   
 function draw(){
-  if(play = true){
-    background(245, 235, 220);
-    stroke(150, 178, 255);
-    strokeWeight(5);
-    fill(217, 241, 255);
-    rect(500, 230, 100, 40, 60);
-    if(mouseIsPressed && mouseX > 500 && mouseX < 600 && mouseY > 230 && mouse Y < 270){
-      play = false
-    }
-  }
-  if(play = false){
+//   if(play = true){
+//     background(245, 235, 220);
+//     stroke(150, 178, 255);
+//     strokeWeight(5);
+//     fill(217, 241, 255);
+//     rect(500, 230, 100, 40, 60);
+//     if(mouseIsPressed && mouseX > 500 && mouseX < 600 && mouseY > 230 && mouse Y < 270){
+//       play = false
+//     }
+//   }
+//   if(play = false){
     if(GameOn = true){
       noStroke();
       fill(255, 156, 228);
@@ -42,5 +42,5 @@ function draw(){
     }
     else{
     }
-  }
+//   }
 }

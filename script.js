@@ -13,6 +13,7 @@ function setup(){
   
 function draw(){
   if(play = true){
+    background(245, 235, 220);
     stroke(150, 178, 255);
     strokeWeight(5);
     fill(217, 241, 255);

@@ -62,11 +62,13 @@ function draw(){
       }
       else{
         GameOn = false;
+        //GameOn isn't switching to false (doesn't go to the "else")
       }
       
       noStroke();
       fill(0);
       ellipse(circleX, circleY, 20, 20);
+      //"if" isn't working
       if(circleX < playerX - 15 && circleX > playerX + 15 && circleY < playerY + 15 && circleY > playerY - 15){
         circleX = random(20,1080);
         circleY = random(20, 480);

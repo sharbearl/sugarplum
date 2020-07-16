@@ -1,5 +1,6 @@
 var GameOn;
 var playerX, playerY;
+var timerX;
 
 
 function setup(){
@@ -9,6 +10,7 @@ function setup(){
   GameOn = true;
   playerX = 550;
   playerY = 460;
+  timerX = 1100;
 }
   
 function draw(){
@@ -45,7 +47,10 @@ function draw(){
       
       stroke(227, 206, 172);
       strokeWeight(5);
-      line(0, 5, 1100, 5);
+      line(0, 5, timerX, 5);
+      if(timerX > 0){
+        timerX--
+      }
 
     }
     else{

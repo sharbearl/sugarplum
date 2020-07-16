@@ -49,7 +49,7 @@ function draw(){
       strokeWeight(5);
       line(0, 5, timerX, 5);
       if(timerX > 0){
-        timerX -= 1
+        timerX -= 0.5
       }
       else{
         GameOn = false;

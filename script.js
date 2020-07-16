@@ -12,6 +12,8 @@ function setup(){
   playerX = 550;
   playerY = 460;
   timerX = 1100;
+  circleX = random(20, 1080);
+  circleY = random(20, 480);
 }
   
 function draw(){
@@ -56,11 +58,9 @@ function draw(){
         GameOn = false;
       }
       
-//   circleX = random(20,1080);
-//   circleY = random(20, 480);
-
-//       fill(0);
-//       ellipse(circleX, circleY, 20, 20);
+      noStroke();
+      fill(0);
+      ellipse(circleX, circleY, 20, 20);
 //       if(circleX < playerX - 15 && circleX > playerX + 15 && circleY < playerY + 15 && circleY > playerY - 15){
 //         circleX = random(20,1080);
 //         circleY = random(20, 480);

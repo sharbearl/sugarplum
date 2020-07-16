@@ -2,6 +2,7 @@ var GameOn;
 var playerX, playerY;
 var timerX;
 var circleX, circleY;
+var score;
 
 
 function setup(){
@@ -14,6 +15,7 @@ function setup(){
   timerX = 1100;
   circleX = random(20, 1080);
   circleY = random(20, 480);
+  score = 0
 }
   
 function draw(){
@@ -48,6 +50,10 @@ function draw(){
         playerY = 30
       }
       
+      fill(0);
+      textSize(35);
+      text(score, 1070, 30);
+      
       stroke(227, 206, 172);
       strokeWeight(5);
       line(0, 5, timerX, 5);
@@ -64,10 +70,14 @@ function draw(){
       if(circleX < playerX - 15 && circleX > playerX + 15 && circleY < playerY + 15 && circleY > playerY - 15){
         circleX = random(20,1080);
         circleY = random(20, 480);
+        score ++;
     }
 
     }
     else{
       background(255, 250, 242);
+      fill(0);
+      textSize(50);
+      text("Score:  " + score, 550, 250); 
     }
 }

@@ -20,16 +20,16 @@ function draw(){
       fill(255, 156, 228);
       ellipse(playerX, playerY, 30, 30);
       if(keyIsPressed && keyCode == UP_ARROW){
-        playerY -= 5
+        playerY -= 10
       }
       else if(keyIsPressed && keyCode == DOWN_ARROW){
-        playerY += 5
+        playerY += 10
       }
       else if(keyIsPressed && keyCode == LEFT_ARROW){
-        playerX -= 5
+        playerX -= 10
       }
       else if(keyIsPressed && keyCode == RIGHT_ARROW){
-        playerX += 5
+        playerX += 10
       }
       
       if(playerX >= 1070){
@@ -49,7 +49,10 @@ function draw(){
       strokeWeight(5);
       line(0, 5, timerX, 5);
       if(timerX > 0){
-        timerX--
+        timerX -= 1
+      }
+      else{
+        GameOn = false;
       }
 
     }

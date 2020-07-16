@@ -4,7 +4,7 @@ var playerX, playerY;
 
 function setup(){
   createCanvas(1100, 500);
-  background(245, 235, 220);
+  background(255, 250, 242);
   frameRate(100);
   GameOn = true;
   playerX = 550;
@@ -13,7 +13,7 @@ function setup(){
   
 function draw(){
     if(GameOn = true){
-      background(245, 235, 220);
+      background(255, 250, 242);
       noStroke();
       fill(255, 156, 228);
       ellipse(playerX, playerY, 30, 30);
@@ -42,6 +42,10 @@ function draw(){
       if(playerY <= 30){
         playerY = 30
       }
+      
+      stroke(227, 206, 172);
+      strokeWeight(5);
+      line(0, 5, 1100, 5);
 
     }
     else{

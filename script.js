@@ -1,6 +1,7 @@
 var GameOn;
 var playerX, playerY;
 var timerX;
+var circleX, circleY;
 
 
 function setup(){
@@ -54,6 +55,10 @@ function draw(){
       else{
         GameOn = false;
       }
+      
+//   circleX = random(20,1080);
+//   circleY = random(20, 480);
+
 
     }
     else{
